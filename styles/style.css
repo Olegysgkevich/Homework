@@ -12,10 +12,11 @@ body {
    
 }
 
-.container {
+.awesome-container {
     max-width: 1400px;
-    border: 1px solid #86878b;
+    /* border: 1px solid #86878b; */
     margin: 0 auto;
+    
 }
 
 
@@ -25,16 +26,13 @@ body {
     text-transform: uppercase;
     color: #212121;
     font-family: 'Raleway';
-    /* Вижу, что шрифт не подключился, разбираться некогда, но на будущее прописал */
     font-weight: 400;
-    color: #212121;
     font-size: 36px;
     line-height: 26px;
     text-align: center;
 }
 
 .awesome__line {
-    
     border-top: 2px solid #ff8b38;
     width: 64px;
     margin: 0 auto;
@@ -45,8 +43,10 @@ body {
     text-align: center;
     line-height: 14px;
     margin-bottom: 80px;
+    color: #86878b;
+
 }
-.subtitle__text {
+.awesome__text {
     color: #86878b;
     font-family: "Open Sans";
     font-weight: 400;
@@ -55,22 +55,27 @@ body {
 
 }
 
-.awesome__cards   {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 143px;
-        margin-right: 143px;
-        
+.awesome-cards{
+    display: flex;
+    justify-content: center;
+    margin-left: 143px;
+    margin-right: 143px;
+}
+
+@media (max-width:500px) {
+    .awesome-cards{
+       display: flex;
+       flex-wrap: wrap;
     }
+}
 
-
-.awesome__cards__item {
+.awesome-cards__item {
     width: 350px;
     margin-bottom: 105px;
 }
     
    
-.awesome__cards__title {
+.awesome-cards__title {
     margin-bottom: 25px;
     color: #333333;
     font-family: "Open Sans";
@@ -81,7 +86,7 @@ body {
     
 }
 
-.awesome__cards__text {
+.awesome-cards__text {
     color: #86878b;
     font-family: "Open Sans";
     font-size: 14px;
@@ -91,7 +96,7 @@ body {
 }
 
 
-.awesome__cards__img {
+.awesome-cards__img {
     margin: 0 auto;
     margin-bottom: 29px;
     width: 70px;
@@ -102,3 +107,221 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+
+/* pricing-options */
+
+.pricing-container {
+    padding-top: 108px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+.pricing {
+    width:100%;
+}
+
+
+.pricing__title{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #212121;
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #212121;
+    font-size: 36px;
+    line-height: 26px;
+    text-align: center;
+    }
+    
+.pricing__line{
+    border-top: 2px solid #ff8b38;
+    width: 64px;
+    margin: 0 auto;
+}
+
+.pricing__subtitle {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 14px;
+    margin-bottom: 80px;
+    color: #86878b;
+}
+    
+.pricing-cards{
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center; 
+    padding-bottom: 96px;
+}
+
+@media (max-width:500px) {
+    .pricing-cards{
+       display: flex;
+       flex-wrap: wrap;
+    }
+}
+
+.pricing-cards__item{
+    width: 343px;
+    margin-left:20px;
+    margin-right:20px;
+}
+    
+.pricing-cards__title{
+    height:59px;
+    border-bottom:1px solid white;
+    background-color: #333333;
+    color:white;
+    font-family: "Open Sans";
+    font-size: 20px;
+    text-align: center;
+    padding-top: 21px;
+}
+    
+.pricing-cards__price{
+    height: 100px;
+    background-color: #333333;;
+    color:white;
+    border-bottom:1px solid white;
+    font-family: Raleway;
+    font-size: 94px;
+    font-weight: 700;
+    text-align:center;
+}
+    
+.pricing-cards__pay-period{
+    height: 51px;
+    background-color:#333333;;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    padding-top:17px;
+}
+
+.pricing-cards__popular{
+    min-height: 5px;
+    background-color:#ff8b38;
+}
+
+.most__popular{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align:center;
+    padding: 13px 0 15px;
+    background-color:#ff8b38;
+}
+
+.pricing-cards__descryption{
+    height : 40px;
+    padding-top: 14px;
+    background-color:white;
+    color: #86878b;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align:center;
+    border-bottom:1px solid #f5f5f5;
+    font-family: "Open Sans";
+}
+
+
+
+.stylish-design{
+    width: 100%;
+}
+
+.stylish-design__container{
+    background-color: black;
+    background-image: url(../img/state_image.png);
+    background-size: cover;
+    MAX-width: 1400px;
+    margin:0 auto;
+}
+@media (max-width:900px) {
+    .tylish-design__container{
+        width: 900px;
+    }
+}
+@media (max-width:600px) {
+    .tylish-design__container{
+        width: 600px;
+    }
+}
+@media (max-width:400px) {
+    .tylish-design__container{
+        width: 400px;
+    }
+}
+
+.stylish-design__title{
+    color: white;
+    padding-top: 74px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.stylish-design__line{
+    border-top: 2px solid #ffffff;
+    width: 64px;
+    margin: 0 auto;
+}
+
+.stylish-design__subtitle{
+    color:#cccccc;
+    opacity:0.8;
+    font-size: 14px;
+    font-family: "Open Sans";
+    text-align: center;
+    line-height: 43px;
+    margin-bottom: 33px;
+} 
+
+
+    button{
+    width: 135px;
+    height: 42px;
+    background: transparent;
+    border-color:white;
+    color:white;
+    margin-bottom:63px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+    
+
+footer{
+    width:100%;
+}
+
+.footer-container{
+    margin: 0 auto;
+    padding-top:38px;
+    max-width: 1400px;
+    background-color: black;
+    
+}
+
+.footer__icons{
+    width: 317px;
+    height: 23px;
+    margin: 0 auto;
+}
+
+.footer__text{
+    color:white;
+    font-size: 12px;
+    text-align:center;
+    font-family: "Open Sans";
+    margin-top:15px;
+    opacity: 0.5;
+    padding-bottom: 15px;
+} 
