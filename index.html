@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="styles/reset.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/style.css">
-	<title>Homework_1</title>
+	<title>Homework</title>
 </head>
 
 <body>
@@ -18,10 +18,8 @@
 	</header>
 
 	<section class="awesome"> 
-		<!-- Попытался немного поадаптировать -->
-		<div class="awesome-container">
+		<div class="container">
 			<h2 class="awesome__title">Why this is awesome</h2>
-			<div class="awesome__line"></div>
 			<div class="awesome__subtitle">
 				<p class='awesome__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
@@ -65,15 +63,14 @@
 	</section>
 
 	<section class="pricing">
-        <div class="pricing-container">
+        <div class="container pricing-container">
             <h2 class="pricing__title">Pricing options</h2>
-            <div class="pricing__line"></div>
 			<p class="pricing__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			
             <div class="pricing-cards">
                 <div class="pricing-cards__item">
                     <h3 class="pricing-cards__title">Basic</h3>
-                    <p class="pricing-cards__price">$0</p>
+                    <p class="pricing-cards__price"><span class="pricing-cards__dollar">$</span>0</p>
                     <p class="pricing-cards__pay-period">Free for Life</p>
                     <p class="pricing-cards__popular"></p>
                     <p class="pricing-cards__descryption">1 gb of space</p>
@@ -85,7 +82,7 @@
                 </div>
                 <div class="pricing-cards__item">
                     <h3 class="pricing-cards__title">Professional</h3>
-                    <p class="pricing-cards__price">$19</p>
+                    <p class="pricing-cards__price"><span class="pricing-cards__dollar">$</span>19</p>
                     <p class="pricing-cards__pay-period">Monthly Payment</p>
                     <p class="pricing-cards__popular most__popular">Our most popular</p>
                     <p class="pricing-cards__descryption">5 gb of space</p>
@@ -97,7 +94,7 @@
                 </div>
                 <div class="pricing-cards__item">
                     <h3 class="pricing-cards__title">Enterprice</h3>
-                    <p class="pricing-cards__price">$70</p>
+                    <p class="pricing-cards__price"><span class="pricing-cards__dollar">$</span>70</p>
                     <p class="pricing-cards__pay-period">Monthly Payment</p>
                     <p class="pricing-cards__popular"></p>
                     <p class="pricing-cards__descryption">Unlimited space</p>
@@ -111,20 +108,87 @@
         </div>
 	</section>
 	
+	<section class="feedback">
+		<div class="container feedback-conteiner">
+		  <h2 class="feedback__title">What our customers are saying</h2>
+		  <p class="feedback__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  
+	  
+		<div class="feedback-cards">
+			<div class="feedback-card__item">
+				<div class="feedback-comment">
+					<p class="feedback-comment__text">Lorem ipsum dolor sit amet, 
+					consectetur adipisicing elit. Doloribus 
+					accusamus expedita repellat similique 
+					odio aspernatur ex, architecto eaque 
+					quo suscipit.</p>
+				</div>
+				<div class="feedback-persone">
+					<img src="img/person_foto.png" alt="person_foto" class="persone_image">
+					<div class="persone_data"> 
+						<h2 class="persone_name">Jeremy H.</h2>
+					<p class="persone_occupation">Manager</p></div>
+					
+				</div>
+			</div>
+
+			<div class="feedback-card__item">
+				<div class="feedback-comment">
+					<p class="feedback-comment__text">Lorem ipsum dolor sit amet, 
+					consectetur adipisicing elit. Doloribus 
+					accusamus expedita repellat similique 
+					odio aspernatur ex, architecto eaque 
+					quo suscipit.</p>					
+				</div>
+				<div class="feedback-persone">
+					<img src="img/person_foto.png" alt="person_foto" class="persone_image">
+					<div class="persone_data"> 
+						<h2 class="persone_name">John S.</h2>
+					<p class="persone_occupation">Freelancer</p></div>
+					
+				</div>
+			</div>
+
+			<div class="feedback-card__item">
+				<div class="feedback-comment">
+					<p class="feedback-comment__text">Lorem ipsum dolor sit amet, 
+					consectetur adipisicing elit. Doloribus 
+					accusamus expedita repellat similique 
+					odio aspernatur ex, architecto eaque 
+					quo suscipit.</p>
+					
+				</div>
+				<div class="feedback-persone">
+					<img src="img/person_foto.png" alt="person_foto" class="persone_image">
+					<div class="persone_data"> 
+						<h2 class="persone_name">Susan W.</h2>
+					<p class="persone_occupation">Photographer</p></div>
+					
+				</div>
+			</div>
+			
+		</div>
+		</div>
+	  </section>
+
 	<section class="stylish-design">
-        <div class="stylish-design__container">
+        <div class="container stylish-container">
             <h2 class="stylish-design__title">Stylish axure design</h2>
-            <div class="stylish-design__line"></div>
             <p class="stylish-design__subtitle">Use the sections you need, remove 
 				the ones you don't.  Create gorgeous prototypes faster than ever!</p>
-            <button>Dowload</button>
+            <button class="stylish-design__button">Dowload</button>
         </div>
 	</section>
 	
 	<footer>
-		<div class="footer-container">
-            <div class="footer__icons">
-                <img src="img/icons.png" alt="Иконки">
+		<div class="container footer-container">
+            <div class="footer__item">
+				<img class= "footer__icons" src="img/google.png" alt="Иконки">
+				<img class= "footer__icons" src="img/google.png" alt="Иконки">
+				<img class= "footer__icons" src="img/google.png" alt="Иконки">
+				<img class= "footer__icons" src="img/google.png" alt="Иконки">
+				<img class= "footer__icons" src="img/google.png" alt="Иконки">
+				<img class= "footer__icons" src="img/google.png" alt="Иконки">
             </div>
             <p class="footer__text">© 2015 Axure Themes</p>
         </div>
