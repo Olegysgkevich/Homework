@@ -404,7 +404,7 @@ input::-moz-placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 147px;
+    padding-top: 147px;
     margin-bottom: 114px;
     padding: -15px;
 }
